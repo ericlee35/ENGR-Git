@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Project 1: Eric Engineers</title>
+        <link rel="icon" type="image/x-icon" href="assets/lightbulb.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Eric Engineers</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="projects2.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="1-project.html">Latest Post</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/post-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Chaos and Creations in Week 1</h1>
+                            <h2 class="subheading">Project 1: Intro to 3D Printing</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Eric Lee</a>
+                                on January 22, 2025
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section-heading">Name Tags</h2>
+                        <h2>First print and first flop of the semester</h2>
+
+                        <p>For my first time 3D printing at Brandeis, I started off with an introduction to using the Prusa MINI and the Prusa Slicer software. My first print project was of a custom name tag keychain. After opening the .3mf file into Prusa Slicer, I could edit the text on the keychain directly in the program and then begin to configure the slicer settings as listed in the image below:</p>
+                        <a href="#!"><img class="img-fluid" src="assets/project1/NameTag1.jpg" alt="..." /></a>
+                        <span class="caption text-muted">Settings in Prusa Slicer</span>
+
+                        <p>The first setting sets the diameter of the filament that is extruded onto the printer base. I learned in class how this thickness setting can be adjusted based on the project you’re printing and the structural integrity you’re aiming to achieve. For example, a smaller diameter can be good for getting fine details in a print, but will take longer. On the other hand, selecting a larger diameter will result in faster printing time and can be beneficial for increased plastic bonding or ”stickiness” and stronger structural integrity.</p>
+                        <p>The other settings I selected were Prusament PLA for the filament material we use for the printer as well as an infill of 15% which strikes a good balance for the density of the internal structure that is sturdy enough but won’t take too long to print/use up unnecessary material. </p>
+                        <p>One thing I found most interesting was seeing the individual layers of the print and how color changes can be programmed into the print file. I noticed that many of the layers were printed in alternating perpendicular patterns (vs. parallel layers) which I’m guessing helps with adhesion and/or structure.</p>
+                        <p>Once I exported the G-code with the slices of the print job, I learned how to set up the 3D printer (with some trial-and-error learning along the way). I first cut the filament at an angle to help with feeding the filament through the tubing. When I first tried loading the filament, I ended up not pushing it hard enough, so the gears weren’t able to pick up the filament and feed it through the rest of the tubing–so there were a couple minutes of the printer moving around the base with no filament being extruded. Seeing that there was an issue, I stopped the print and tried reloading the filament, this time making sure to push a little harder as the gears started turning. </p>
+                        <p>This did the trick and my nametag was looking good after the first color layer finished. Once the printer stopped, I was able to unload my yellow filament and switch it for blue filament. However, I didn’t allow all the yellow filament to be extruded before starting the printer back up again so there was a bit of clumpage near the nozzle, causing parts of the lettering and border of the nametag to be skipped. Professor Ben noticed the issue too and told me to try stopping the print and starting again to get a cleaner print.</p>
+                        
+                        <!-- Video -->
+                        <video width="500px" height="400px" controls>
+                            <source src="assets/project1/nametag.MOV" type="video/mp4">
+                        </video>
+                        
+                        <p>Second time around printing the nametag, I was able to get a little bit of a cleaner transition between the two colored filaments–making sure the first filament was fully extruded to the point where the second color was coming out of the nozzle–before resuming printing. I still had a little bit of “skipping” in the lettering of the print but hopefully with some more practice, I’ll get some higher quality prints without issues from clumped filament.</p>
+                        
+                        <a href="#!"><img class="img-fluid" src="assets/project1/nametags.jpg" alt="..." /></a>
+                        <span class="caption text-muted">1st attempt (bottom), 2nd attempt (top)</span>
+
+                        
+                        <p>Overall, this was a great crash course in 3D printing and it was fun to make mistakes and learn from them and my fellow classmates along the way.</p>
+
+                        
+                        <h2 class="section-heading">Torture Testing</h2>
+                        <h3>Less painful for me than the 3D printer</h3>
+                        
+                        <p>For the second part of this project, I found some designs on Thangs to see what features and geometries could be (un)successfully 3D printed. Similar to the first part of this project, I opened print files in Prusa Slicer with the same slicing settings as the nametag print.</p>
+                        <p>My first print was of a benchy design that was melting into a puddle. Some features of this design that could be challenging for the printer to complete successfully included lots of overhangs in the cabin of the boat and the uptilted hull as well as small details like the chimney and text at the front of the boat. Overall, I think it printed surprisingly well. There weren’t any major issues with printing the more extreme overhangs which were about 30°-45°. It also did pretty well with fine details of about 1mm. However, one minor detail I noticed was at this scale, the text (#3DBenchy) was not very legible. This issue with clarity in text was probably made worse by the fact that it was printed at a tilted angle instead of a flat surface.</p>
+                        
+                        <a href="#!"><img class="img-fluid" src="assets/project1/melting.jpg" alt="..." /></a>
+                        <span class="caption text-muted">Melting Benchy</span>
+
+                        
+                        <p>I also had time to do a second torture test, this time with a geometric calibration dome I found on Printables. This design had cool geometries like a hollow dome, a ~30° curved overhang, a straight overhang of 3.7cm without any supports, more overhangs, and lots of fine details. I would say the printer was pretty successful in printing this job as well. There was some filament that was loosely hanging around a 90° overhang region and the long overhang was not completely straight, but it held up surprisingly well. The rest of the print looked pretty similar to the design in Prusa Slicer.</p>
+                        
+                        <a href="#!"><img class="img-fluid" src="assets/project1/dome.jpg" alt="..." /></a>
+                        <span class="caption text-muted">Calibration Dome Torture Test</span>
+
+                        
+                        
+                        <p>Overall, these projects taught me how some pretty extreme designs can still be successfully printed. I can imagine that in future projects, I can incorporate overhangs, curved architectures, and hollow geometries which I initially thought would be challenging or impossible to be printed. Also, incorporating supports in future projects would help with successful printing of these 3D print features. Like mentioned in class, it could also be helpful for me to consider changing the orientation of future prints to limit overhangs and work with instead of against gravity.</p>
+                        <p>I also learned in this assignment the differences between 3MF and STL files. With 3MF files, information about things like color and print materials is stored. This was helpful in the nametag project where the printer automatically stopped printing when there was a color change, allowing us to swap out filament colors in the middle of the project. Meanwhile, STL files only store information about the surface geometry of the object that’s printed, meaning it wouldn’t be able to accommodate for things like color changes in filament in the project.</p>
+                        <p>I’m excited to learn more about 3D printing during the course of the rest of the semester and integrate 3D printed parts with other types of manufacturing.</p>
+                        
+                        
+
+                        <a href="#!"><img class="img-fluid" src="assets/project1/Benchy1.jpg" alt="..." /></a>
+                        <span class="caption text-muted"> Test Caption</span>
+
+                        <a href="#!"><img class="img-fluid" src="assets/project1/DomeTest1.jpg" alt="..." /></a>
+                        <span class="caption text-muted">Test Caption</span>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
