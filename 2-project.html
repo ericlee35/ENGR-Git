@@ -41,7 +41,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="post-heading">
-                            <h1>________________</h1>
+                            <h1>Huh, It Worked!</h1>
                             <h2 class="subheading">Project 2: Remixing 3D Designs</h2>
                             <span class="meta">
                                 Posted by
@@ -60,83 +60,88 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>For Project 2, I learned how to remix and combine existing designs on CAD softwares TinkerCAD and Fusion. There’s definitely an ongoing learning curve to using these programs to their full capabilities, and some confusion and frustration around navigating these tools, but I’m slowly getting the hang of it.</p>
+
+                        <!-- TinkerCAD-->
                         <h2 class="section-heading">TinkerCAD</h2>
-                        <h2>First print and first flop of the semester</h2>
-
-
-
-                        <p>For my first time 3D printing at Brandeis, I started off with an introduction to using the Prusa MINI and the Prusa Slicer software. My first print project was of a custom name tag keychain. After opening the .3mf file into Prusa Slicer, I could edit the text on the keychain directly in the program and then begin to configure the slicer settings (CAM) as listed in the image below:</p>
+                        <h2>I kind of get it</h2>
+                        
+                        <p>For my first remixing project, I explored designs on Thingaverse and found a file for a <a href="https://www.thingiverse.com/thing:5877331">deck of cards holder.</a> Because of the way the print is configured with the flat base printed first, I was trying to find small objects that I could incorporate into the card holder’s design without impacting its functionality. I ultimately decided to add some <a href="https://www.thingiverse.com/thing:967587">columns</a> to the four corners of the holder as a design element. Below is a sketch of how I planned on adding the columns to the four corners.</p>
                         <a href="#!"><img class="img-fluid" src="assets/project2/sketch.jpg" alt="..." /></a>
                         <span class="caption text-muted">Sketch</span>
-
-
-                        <p>For my first time 3D printing at Brandeis, I started off with an introduction to using the Prusa MINI and the Prusa Slicer software. My first print project was of a custom name tag keychain. After opening the .3mf file into Prusa Slicer, I could edit the text on the keychain directly in the program and then begin to configure the slicer settings (CAM) as listed in the image below:</p>
+                        
+                        
+                        <p>After sketching it up, I imported the card holder and column designs into TinkerCAD. The first step was adding columns to the top portion of the card holder. I rescaled the size of the columns to be smaller and then placed them along the four corners, making sure the columns were aligned parallel to each other and lay flush with the base of the card holder. After scaling and moving the columns, I grouped them together with the card holder design.</p>
                         <a href="#!"><img class="img-fluid" src="assets/project2/cards.jpg" alt="..." /></a>
                         <span class="caption text-muted">Resizing the columns and fitting them in the corners of the container</span>
-
-
                         <a href="#!"><img class="img-fluid" src="assets/project2/cards2.jpg" alt="..." /></a>
                         <span class="caption text-muted">Placement of columns along the four corners of the top part of the container</span>
-
-
+                        
+                        <p>For the second part of this remixed design, I added columns to the bottom half of the card holder. I first used a cube shape and the “hole” feature to crop out the top portion of the column to maintain its base dimensions but reduce its height. From there, I went through a similar process of aligning the columns to each other and with the base of the card holder as well as grouping the items together.</p>
                         <a href="#!"><img class="img-fluid" src="assets/project2/cards3.jpg" alt="..." /></a>
                         <span class="caption text-muted">Removing the top portion of columns using the "hole" feature on TinkerCAD</span>
-
-
                         <a href="#!"><img class="img-fluid" src="assets/project2/cards4.jpg" alt="..." /></a>
                         <span class="caption text-muted">Aligning bases of the columns to the bottom of the container</span>
-
-
+                        
+                        <p>The last thing I did in TinkerCAD was add text to one of the faces of the card holder. I typed in the text “Nerts” for a card game me and my friends play a lot, and reflected the text along the x and y axes so that it would read correctly when the top piece was placed on top of the bottom piece of the holder.</p>
                         <a href="#!"><img class="img-fluid" src="assets/project2/cards5.jpg" alt="..." /></a>
                         <span class="caption text-muted">Adding text to side of the container</span>
-
                         <a href="#!"><img class="img-fluid" src="assets/project2/cards6.jpg" alt="..." /></a>
                         <span class="caption text-muted">Finished Design</span>
-
+                        
+                        <p>From there, I exported the .STL file and opened it in PrusaSlicer, the CAM portion of this remixing process. Since the design was too big to fit on the print base, I split the design into two prints, one for the base piece and one for the top piece. In PrusaSlicer, I sliced the project with the settings listed below.</p>
                         <a href="#!"><img class="img-fluid" src="assets/project2/slicebase.jpg" alt="..." /></a>
                         <span class="caption text-muted">Base of container</span>
-
                         <a href="#!"><img class="img-fluid" src="assets/project2/slicetop.jpg" alt="..." /></a>
                         <span class="caption text-muted">Top of Container</span>
-
+                       
+                        <p>One notable setting I had to turn on was the addition of supports on the build plate for the top piece of the design. This was important because I wanted to make sure the spades design on the bottom of the piece would print without any issues.</p>
                         <a href="#!"><img class="img-fluid" src="assets/project2/base.jpg" alt="..." /></a>
                         <span class="caption text-muted">Green regions are supports for design of top part of the container</span>
-
                         <a href="#!"><img class="img-fluid" src="assets/project2/print.jpg" alt="..." /></a>
                         <span class="caption text-muted">Printing! (top left and bottom right)</span>
+                        
+                        <p>Overall, I’m very happy with the way this print turned out. The column design lay pretty flush with each other as it split from the top to the bottom piece. Also, I’m glad the two pieces fit into each other well with minimal gaps or movement in between. The functionality of the card holder is also nice–I tried putting in different-sized decks of cards and they all fit inside. One area of improvement in the design is that the fine details in the columns didn’t print super clearly. To fix this, I could modify the design of the column so the vertical details are thicker.</p>
+                        <a href="#!"><img class="img-fluid" src="assets/project2/box2.jpg" alt="..." /></a>
+                        <span class="caption text-muted">How the two pieces fit together, some imprecision in the column design</span>
 
-                        <p>The first setting sets the diameter of the filament that is extruded onto the printer base. I learned in class how this thickness setting can be adjusted based on the project you’re printing and the structural integrity you’re aiming to achieve. For example, a smaller diameter can be good for getting fine details in a print, but will take longer. On the other hand, selecting a larger diameter will result in faster printing time and can be beneficial for increased plastic bonding or ”stickiness” and stronger structural integrity.</p>
-                        <p>This did the trick and my nametag was looking good after the first color layer finished. Once the printer stopped, I was able to unload my yellow filament and switch it for blue filament. However, I didn’t allow all the yellow filament to be extruded before starting the printer back up again so there was a bit of clumpage near the nozzle, causing parts of the lettering and border of the nametag to be skipped. Professor Ben noticed the issue too and told me to try stopping the print and starting again to get a cleaner print.</p>
-                        
-                        <!-- Video -->
-                        <video width="500px" height="400px" controls>
-                            <source src="assets/project1/nametag.MOV" type="video/mp4">
-                        </video>
-                        
-                        <p>Second time around printing the nametag, I was able to get a little bit of a cleaner transition between the two colored filaments–making sure the first filament was fully extruded to the point where the second color was coming out of the nozzle–before resuming printing. I still had a little bit of “skipping” in the lettering of the print but hopefully with some more practice, I’ll get some higher quality prints without issues from clumped filament.</p>
-                        
+                        <p>It was also nice showing my friends and they were very excited to use the card holder on our upcoming trip to upstate New York over February break where we’ll play many card games.</p>
+                        <p></p>                        
+
+                        <a href="#!"><img class="img-fluid" src="assets/project2/box1.jpg" alt="..." /></a>
+                        <span class="caption text-muted">It fits a deck of cards!</span>    
+                        <a href="#!"><img class="img-fluid" src="assets/project2/box3.jpg" alt="..." /></a>
+                        <span class="caption text-muted">More pics of the final print</span>
+        
+
+                        <!--Fusion-->  
+                        <h2 class="section-heading">Fusion</h2>
+                        <h3>I get this a lot less</h3>
+
+                        <p>For the second part of this project, I did a remixing design in Fusion. While doing the intro tutorials, I definitely had some confusion around all the tools that are offered and some difficulty with the accessibility of orienting myself and creating sketches in a 2D plane and components in 3D space. Even drawing a line had its challenges for me, multitasking clicking and dragging as well as typing in the exact dimension I wanted. It wasn’t super intuitive for me to click the dimension tool to update dimensions instead of clicking on the line itself to adjust. Some other struggles included making 3D objects in the wrong orientation, setting angles for connected lines, grouping components together. Also, I’m still a little confused about the different types of joints and their different purposes. Hopefully, I’ll get a better hand of things as I use Fusion more.</p>
+                        <p>For my remixed design, I kept it simple aiming to combine a <a href="https://www.thingiverse.com/thing:2238189">leaf</a> and <a href="https://www.thingiverse.com/thing:1363148">gecko</a> I found on Thingaverse. I aimed to use the leaf as a base that the gecko could rest on.</p>  
                         <a href="#!"><img class="img-fluid" src="assets/project2/sketch2.jpg" alt="..." /></a>
                         <span class="caption text-muted">Sketch</span>
 
+                        <p>I first inserted the gecko into the leaf design file and did some rescaling and rotations to match how I positioned them in my sketch. I also made sure the base of the gecko touched the top of the leaf so the two designs would be incorporated together for the print.</p>                  
                         <a href="#!"><img class="img-fluid" src="assets/project2/gecko.jpg" alt="..." /></a>
-                        <span class="caption text-muted">1st attempt (bottom), 2nd attempt (top)</span>
-
+                        <span class="caption text-muted">Uploading both files in Fusion</span>
                         <a href="#!"><img class="img-fluid" src="assets/project2/gecko2.jpg" alt="..." /></a>
-                        <span class="caption text-muted">1st attempt (bottom), 2nd attempt (top)</span>
+                        <span class="caption text-muted">Final mixing of the designs using rotations, scaling, and changing placement</span>
 
+                        <p>After exporting the .stl file and opening it up in Prusa, I resized the design to fit on the printing plate and sliced the design with the settings listed below.</p>  
                         <a href="#!"><img class="img-fluid" src="assets/project2/gecko3.jpg" alt="..." /></a>
-                        <span class="caption text-muted">1st attempt (bottom), 2nd attempt (top)</span>
-                        
-                        <p>Overall, this was a great crash course in 3D printing and it was fun to make mistakes and learn from them and my fellow classmates along the way.</p>
+                        <span class="caption text-muted">Sliced project in Prusa</span>
 
-                        
-                        <h2 class="section-heading">Fusion</h2>
-                        <h3>Less painful for me than the 3D printer</h3>
-                        
-                        <p>For the second part of this project, I found some designs on Thangs to see what features and geometries could be (un)successfully 3D printed. Similar to the first part of this project, I opened print files in Prusa Slicer with the same slicing settings as the nametag print.</p>
-                        
-                        <p>I also had time to do a second torture test, this time with a <a href="https://www.printables.com/model/599501-calibration-dome-everything-test-torture-test/files">geometric calibration dome I found on Printables.</a> This design had cool geometries like a hollow dome, a ~30° curved overhang, a straight overhang of 3.7cm without any supports, more overhangs, and lots of fine details. I would say the printer was pretty successful in printing this job as well. There was some filament that was loosely hanging around a 90° overhang region and the long overhang was not completely straight, but it held up surprisingly well. The rest of the print looked pretty similar to the design in Prusa Slicer.</p>
-                        
+                        <p>I think my final print turned out solid and I’m glad the two components were connected together. One thing I noticed was that since the print was pretty small, the fine details in the curvature on the gecko and the leaf were kind of striated and terraced. I think if I printed this on a bigger scale, the changes in the curvature could be made more gradually across multiple layers so it would have less of a striped appearance. But for a quick one-hour print, I’m happy with how my first Fusion CAD project worked out.</p>  
+                        <a href="#!"><img class="img-fluid" src="assets/project2/leaf.jpg" alt="..." /></a>
+                        <span class="caption text-muted">Final print</span> 
+
+                        <!--Final Reflections-->
+                        <h2 class="section-heading">Final Reflections</h2>
+                        <p></p>  
+         
+                                               
                     </div>
                 </div>
             </div>
