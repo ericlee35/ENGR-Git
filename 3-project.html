@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Project 1: Eric Engineers</title>
+        <title>Project 3: Eric Engineers</title>
         <link rel="icon" type="image/x-icon" href="assets/lightbulb.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -36,17 +36,17 @@
 
 
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('assets/project1/banner.jpeg')">
+        <header class="masthead" style="background-image: url('assets/project3/Banner.jpg')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="post-heading">
-                            <h1>______________</h1>
-                            <h2 class="subheading">Project 3:____</h2>
+                            <h1>The Soldering Soldiers Design Cars</h1>
+                            <h2 class="subheading">Project 3: Form and Fit for Electronics</h2>
                             <span class="meta">
                                 Posted by
                                 <a href="#!">Eric Lee</a>
-                                on January 22, 2025
+                                on March 7, 2025
                             </span>
                         </div>
                     </div>
@@ -60,60 +60,207 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <h2 class="section-heading">Name Tags</h2>
-                        <h2>First print and first flop of the semester</h2>
-
-                        <p>For my first time 3D printing at Brandeis, I started off with an introduction to using the Prusa MINI and the Prusa Slicer software. My first print project was of a custom name tag keychain. After opening the .3mf file into Prusa Slicer, I could edit the text on the keychain directly in the program and then begin to configure the slicer settings (CAM) as listed in the image below:</p>
-                        <a href="#!"><img class="img-fluid" src="assets/project1/NameTag1.jpg" alt="..." /></a>
-                        <span class="caption text-muted">Settings in Prusa Slicer</span>
-
-                        <p>The first setting sets the diameter of the filament that is extruded onto the printer base. I learned in class how this thickness setting can be adjusted based on the project you’re printing and the structural integrity you’re aiming to achieve. For example, a smaller diameter can be good for getting fine details in a print, but will take longer. On the other hand, selecting a larger diameter will result in faster printing time and can be beneficial for increased plastic bonding or ”stickiness” and stronger structural integrity.</p>
-                        <p>The other settings I selected were Prusament PLA for the filament material we use for the printer as well as an infill of 15% which strikes a good balance for the density of the internal structure that is sturdy enough but won’t take too long to print/use up unnecessary material. </p>
-                        <p>One thing I found most interesting was seeing the individual layers of the print and how color changes can be programmed into the print file. I noticed that many of the layers were printed in alternating perpendicular patterns (vs. parallel layers) which I’m guessing helps with adhesion and/or structure.</p>
-                        <p>Once I exported the G-code with the slices of the print job, I learned how to set up the 3D printer (with some trial-and-error learning along the way). I first cut the filament at an angle to help with feeding the filament through the tubing. When I first tried loading the filament, I ended up not pushing it hard enough, so the gears weren’t able to pick up the filament and feed it through the rest of the tubing–so there were a couple minutes of the printer moving around the base with no filament being extruded. Seeing that there was an issue, I stopped the print and tried reloading the filament, this time making sure to push a little harder as the gears started turning. </p>
-                        <p>This did the trick and my nametag was looking good after the first color layer finished. Once the printer stopped, I was able to unload my yellow filament and switch it for blue filament. However, I didn’t allow all the yellow filament to be extruded before starting the printer back up again so there was a bit of clumpage near the nozzle, causing parts of the lettering and border of the nametag to be skipped. Professor Ben noticed the issue too and told me to try stopping the print and starting again to get a cleaner print.</p>
+                       
+                        <p>In Project 3, I learned a bunch of new skills like soldering, laser cutting, and iterative design to create a robot car and chassis enclosure. This project was a very cool experience combining previously learned techniques like 3D printing with the Prusa MINIs, expanding on familiar techniques like CAD in Fusion, and gaining exposure to new tools like LightBurn and electronics soldering.</p>
                         
-                        <!-- Video -->
-                        <video width="500px" height="400px" controls>
-                            <source src="assets/project1/nametag.MOV" type="video/mp4">
+                        <h2>Assembling Our Robots</h2>
+                        <p>In the first part of this project, Ava and I assembled our robot from the D2-5 Intelligent Tracking Car DIY kit and followed <a href="https://m.media-amazon.com/images/I/A1lEYFXJO1L.pdf">these build instructions.</a> From a first read-through of the instruction manual, a major weakness was a lack of zoomed-in pictures to clearly indicate which parts to use. For example, the resistors looked very similar from afar and it required a really close zoom-in on the instructions to get a better sense of which parts to use, and even then it was a little ambiguous at times. Another tricky part of the instruction manual was inserting the correct negative or positive poles of the capacitors into the circuit board, but the square vs. circular pads helped clarify which end went where. One step that was particularly frustrating was adding the yellow gaskets to the bottom side of the car. I found it helpful to install the wheel and axle pieces and use them to further push the gaskets into the screws. Another confusing step was how the coloration of the wires didn’t match those listed in the instructions. But, after some clarification from Professor Ben, I learned that what really mattered was that each individual wire was positioned in the correct place. Overall, I think the instructions were fairly clear and easy to follow.</p>
+                        <p>In terms of the assembly process, it was a very fun experience learning how to solder. We first practiced soldering on an empty circuit board to get a feel for how long to hold the solder near the iron to get the ideal temperature and flow for a “Hershey’s Kiss” solder. We split up the build process by doing half of the work for each step. For example, in Step 1, I would position and solder two resistors and Ava would do the corresponding two resistors. This was a helpful strategy as it allowed us to double-check our work to make sure we were putting the right pieces in the right places with the right directionality.</p>
+                        <a href="assets/project3/solder.jpg" target="_blank">
+                            <img src="assets/project3/solder.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Practicing our soldering</span>
+                        
+                        <p>Some notable steps that were a little more difficult were adding the photoresistors and LED lights since they required a specific height away from the circuit board. This step required the use of the stand with the clips to hold the car up in the air. Additionally, when we were working with the wires, the wire strippers would sometimes clip through the casing and the wires, and sometimes the wire would rip off from where it was soldered so this step had to be done a couple of times throughout the project.</p>
+
+                        <a href="assets/project3/solder2.jpg" target="_blank">
+                            <img src="assets/project3/solder2.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Soldering the resistors</span>
+
+                        <a href="assets/project3/solder3.jpg" target="_blank">
+                            <img src="assets/project3/solder3.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Placement of the LEDs</span>
+
+                        
+                        <a href="assets/project3/solder4.jpg" target="_blank">
+                            <img src="assets/project3/solder4.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Hershey's Kisses!</span>
+
+                        
+                        <a href="assets/project3/Eric.jpg" target="_blank">
+                            <img src="assets/project3/Eric.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Me in action</span>
+
+                        <p>When we were finished assembling the car, we got to testing it! Surprisingly, it turned on! When I set it down on the track for the first time, it had some difficulty making turns in the left direction, so I screwed in the potentiometers to adjust the sensitivity to the line detection. After adjusting the potentiometers, I was able to get the car moving and making turns. It was cool seeing how the car would make very frequent left and right adjustments, switching movement from one wheel to another to go along the track.</p>
+                       <!-- Video -->
+                        <video width="100%" height="400px" controls>
+                            <source src="assets/project3/1car.MOV" type="video/mp4">
                         </video>
-                        
-                        <p>Second time around printing the nametag, I was able to get a little bit of a cleaner transition between the two colored filaments–making sure the first filament was fully extruded to the point where the second color was coming out of the nozzle–before resuming printing. I still had a little bit of “skipping” in the lettering of the print but hopefully with some more practice, I’ll get some higher quality prints without issues from clumped filament.</p>
-                        
-                        <a href="#!"><img class="img-fluid" src="assets/project1/nametags.jpg" alt="..." /></a>
-                        <span class="caption text-muted">1st attempt (bottom), 2nd attempt (top)</span>
+                        <span class="caption text-muted">It moves!</span>
+
+                        <video width="100%" height="400px" controls>
+                            <source src="assets/project3/car.MOV" type="video/mp4">
+                        </video>
+                        <span class="caption text-muted">It moves along the track!</span>
+                       
+                        <p>Once the car was functioning, we took many many measurements using digital calipers for the car’s exterior, the dimensions of critical parts like the wheels, power button, and LED lights for the next part of this project.</p>
+
+                        <a href="assets/project3/Dimension1.jpg" target="_blank">
+                            <img src="assets/project3/Dimension1.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Lots of measurements</span>
+
+                        <a href="assets/project3/Dimension2.jpg" target="_blank">
+                            <img src="assets/project3/Dimension2.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Measurements for access to the power button</span>
+
+                        <a href="assets/project3/Dimension3.jpg" target="_blank">
+                            <img src="assets/project3/Dimension3.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Even more measurements</span>
 
                         
-                        <p>Overall, this was a great crash course in 3D printing and it was fun to make mistakes and learn from them and my fellow classmates along the way.</p>
+                     
+                        
+                        <h2>3D Printing</h2>
+                        <p>In the next part of this project, we worked on 3D printing designs for our car chassis. For our first iteration, we created a simple box in Fusion. Following along with <a href="https://www.youtube.com/watch?v=HDJ2g19SlCI&ab_channel=Mantis3DPrinter">this tutorial</a> on YouTube was really helpful in reviewing the tools in Fusion like the organization of our components and sketches, keyboard shortcuts, extruding, and filleting. </p>
+                        <p>In our first 3D printing iteration, we added an extra 10mm of clearance from the base dimensions of the box and had the thickness of our walls be 5mm. After printing, the fit of the box was definitely a bit too large, but it was good to know that the thickness of our walls could be thinner than 5mm. As seen in the pictures below, we had too much clearance in both the length and width of the box so it completely went over the car instead of resting on the exposed parts of the circuit board.</p>
+                        <a href="assets/project3/Sketch.jpg" target="_blank">
+                            <img src="assets/project3/Sketch.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Sketches of our design</span>
+                        
+                        <a href="assets/project3/FusionBox.jpg" target="_blank">
+                            <img src="assets/project3/FusionBox.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">First 3D print design in Fusion</span>
 
                         
-                        <h2 class="section-heading">Torture Testing</h2>
-                        <h3>Less painful for me than the 3D printer</h3>
-                        
-                        <p>For the second part of this project, I found some designs on Thangs to see what features and geometries could be (un)successfully 3D printed. Similar to the first part of this project, I opened print files in Prusa Slicer with the same slicing settings as the nametag print.</p>
-                        <p>My first print was of a <a href="https://www.thingiverse.com/thing:6895544">benchy design</a> that was melting into a puddle. Some features of this design that could be challenging for the printer to complete successfully included lots of overhangs in the cabin of the boat and the uptilted hull as well as small details like the chimney and text at the front of the boat. Overall, I think it printed surprisingly well. There weren’t any major issues with printing the more extreme overhangs which were about 30°-45°. It also did pretty well with fine details of about 1mm. However, one minor detail I noticed was at this scale, the text (#3DBenchy) was not very legible. This issue with clarity in text was probably made worse by the fact that it was printed at a tilted angle instead of a flat surface.</p>
-                        
-                        <a href="#!"><img class="img-fluid" src="assets/project1/Benchy1.jpg" alt="..." /></a>
-                        <span class="caption text-muted">Slicing File of Melting Benchy</span>
+                        <a href="assets/project3/PrusaBox2.jpg" target="_blank">
+                            <img src="assets/project3/PrusaBox2.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Sliced 3D print in Prusa for iteration 1</span>
 
-                        <a href="#!"><img class="img-fluid" src="assets/project1/melting.jpg" alt="..." /></a>
-                        <span class="caption text-muted">Melting Benchy</span>
+                        <a href="assets/project3/PrintSettings.jpg" target="_blank">
+                            <img src="assets/project3/PrintSettings.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Slicing settings</span>
 
-                        
-                        <p>I also had time to do a second torture test, this time with a <a href="https://www.printables.com/model/599501-calibration-dome-everything-test-torture-test/files">geometric calibration dome I found on Printables.</a> This design had cool geometries like a hollow dome, a ~30° curved overhang, a straight overhang of 3.7cm without any supports, more overhangs, and lots of fine details. I would say the printer was pretty successful in printing this job as well. There was some filament that was loosely hanging around a 90° overhang region and the long overhang was not completely straight, but it held up surprisingly well. The rest of the print looked pretty similar to the design in Prusa Slicer.</p>
-                        
-                        <a href="#!"><img class="img-fluid" src="assets/project1/DomeTest1.jpg" alt="..." /></a>
-                        <span class="caption text-muted">Slicing File of Calibration Dome</span>
+                        <a href="assets/project3/Eyes.jpg" target="_blank">
+                            <img src="assets/project3/Eyes.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Box 1</span>
 
-                        <a href="#!"><img class="img-fluid" src="assets/project1/dome.jpg" alt="..." /></a>
-                        <span class="caption text-muted">Calibration Dome Torture Test</span>
+                        <a href="assets/project3/1-Car.jpg" target="_blank">
+                            <img src="assets/project3/1-Car.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Extra clearance- fit was a little too large</span>
+                        
+                        <p>Based on our first design which was too big, we adjusted the dimensions of our design for our second 3D print iteration, and made the thickness of our walls 3mm to better fit between the resistors of our car to allow for exposure of the LED lights. We also had to take many additional measurements to allow access to the different features of the car. In addition to the thinning of walls and tapering of the box to allow access to the LED lights, we cut out additional circular holes in our chassis to allow for the wheels to freely move and a rectangular hole in the back face to press the power button. In terms of access to the batteries, we made sure our design could easily be removed and added back on for battery changes. Additionally, since our car chassis only covered the top portion of the car, we didn’t have to worry about blockages to the sensors on the ground.</p>
+                        <p>After the second iteration was printed, we placed it on top of the car and found the fit to be really good around the LED lights and the power button. However, our hole cutouts for wheel movement were too close to the back of the car. This mistake most likely occurred because we placed the wheel holes about 14mm from the base of the car. But since we incorporated extra clearance along the length of the car and had to add additional length for the thickness of the print material, the holes did not fully allow exposure to the wheels. So, the car was not able to freely move since the print material was rubbing against the tires. For our next iterations, we fixed this issue by taking measurements of the wheels starting from the front and back of the car to get a better placement of the holes. We also reduced the length of the car by 4mm to allow for a better fit of the chassis.</p>
+                        <a href="assets/project3/Car2.jpg" target="_blank">
+                            <img src="assets/project3/Car2.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Iteration 2- Good fit around the LED lights but not so much the wheels</span>
 
+                        <h2>Laser Cutting</h2>
+                        <p>In the next part of this project, we worked on laser cutting- a subtractive manufacturing process. It was definitely a little bit of an adjustment thinking about how to adapt our design from 3D printing (an additive process) and learning how to use new techniques like finger joints and using LightBurn, but it was enjoyable.</p>
+                        <p>Our first iteration of our laser cut chassis was based on Fusion tutorials learning how to create a <a href="https://www.youtube.com/watch?v=ZrcqauNvt0M&ab_channel=WhatMakeArt">finger joint box</a> and <a href="https://www.instructables.com/Parametric-Open-Box-With-Finger-Joints-in-Fusion36/">parameterization of our designs.</a> By following along with these tutorials, I’d say I’ve gained some more comfort using Fusion and its layout of different tools for sketching, altering dimensions, placement of components, and extruding. I learned about the use of new tools like mirroring to duplicate the planes of the box. It was also really cool to learn about the cut tool to cut corresponding fingers to a rectangular plane that is adjacent to two planes that already have joints to them. One difficulty I encountered was sometimes I would have over-constrained sketches when creating rectangles and midpoint lines for the finger joints. The interface could get clustered at times with the symbols for sketch lines that had to be kept perpendicular, equal in dimension, or parallel. So, when I got messages saying my sketch was overconstrained, it would be difficult to diagnose which sketch lines had issues. I’d find myself just undoing my steps and redoing the sketch again which definitely wasn’t the most time-effective strategy but it helped me gain more practice with the process. The tutorial was also helpful in explaining the different tools used and also tasks like combining components and mirroring parts in a step-by-step manner.</p>
+                        <a href="assets/project3/Joint.jpg" target="_blank">
+                            <img src="assets/project3/Joint.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Creating the finger joint sketches</span>
+
+                        <a href="assets/project3/Cut.jpg" target="_blank">
+                            <img src="assets/project3/Cut.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Cutting the joints on the back face by combining components</span>
+                        <p>For our first iteration, we created a simple finger joint box like the one in the tutorial, but with dimensions specific to our car. We then transferred our design from Fusion to LightBurn by saving sketches for each individual plane in our design and exporting them as .dxf files. In LightBurn, we imported these sketches and rearranged them next to each other to save wasted materials during cutting. From there, we downloaded our lightburn files and opened them on the class computer, rearranging them on the template board file and making sure the cut settings were sent to 100% power and about 20% speed so it would cut through the material fully. Luckily, we didn’t have major issues with our cuts and the parts were able to be cut through on the first try. After gluing the pieces together, we got our first iteration. This time, the dimensions of the width and height of the box fit well with the car. However, along the length of the car, the material hit the LED lights, so it couldn’t enclose the car.</p>
                         
+                        <a href="assets/project3/Lightburn.jpg" target="_blank">
+                            <img src="assets/project3/Lightburn.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Lightburn layout of our box pieces</span>
                         
-                        <p>Overall, these projects taught me how some pretty extreme designs can still be successfully printed. I can imagine that in future projects, I can incorporate overhangs, curved architectures, and hollow geometries which I initially thought would be challenging or impossible to be printed. Also, incorporating supports in future projects would help with successful printing of these 3D print features. Like mentioned in class, it could also be helpful for me to consider changing the orientation of future prints to limit overhangs and work with instead of against gravity.</p>
-                        <p>I also learned in this assignment the differences between 3MF and STL files. With 3MF files, information about things like color and print materials is stored. This was helpful in the nametag project where the printer automatically stopped printing when there was a color change, allowing us to swap out filament colors in the middle of the project. Meanwhile, STL files only store information about the surface geometry of the object that’s printed, meaning it wouldn’t be able to accommodate for things like color changes in filament in the project.</p>
-                        <p>I’m excited to learn more about 3D printing during the course of the rest of the semester and integrate 3D printed parts with other types of manufacturing.</p>
+                        <a href="assets/project3/Cut1.jpg" target="_blank">
+                            <img src="assets/project3/Cut1.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Fit of our first laser cut- hit the wheels and LED lights</span>
+
+                        <video width="100%" height="400px" controls>
+                            <source src="assets/project3/Cut.MOV" type="video/mp4">
+                        </video>
+                        <span class="caption text-muted">Very speedy cut</span>
+
+                        <p>For our second iteration, we cut out holes for the wheels and power button for a better fit to the car compared to the simple box. We initially intended to cut holes for the LED lights as well, but forgot to add this to our design because we were caught up in some Fusion confusion. We had difficulty moving our component for the wheel holes because our sketch and component organization started getting pretty messy and disorganized. However, we eventually were able to select and move our hole for the car. A good lesson on organization in Fusion.</p>
+                        <a href="assets/project3/Cut2.jpg" target="_blank">
+                            <img src="assets/project3/Cut2.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">2nd laser cut design</span>
+
+                        <p>Our second iteration print went well but again, the length of the car chassis hit the LED lights so it couldn’t enclose the car. For our third iteration, we cut out additional holes along the LED lights and used specific measurements with a lot of extra clearance around the lights to make sure our box would fit. In the end, our laser cut was able to allow access to the power button in the back, movement of the wheels and exposure of the LED lights along the sides, easy access to the batteries by removing the chassis, and the sensors could see the ground! If we continued to iterate our design, we would make some of our holes smaller to allow for a better fit of the chassis with the wheels and LED lights and make more cosmetic changes to the box like rounded edges and less boxy sides.</p>
+                        <a href="assets/project3/Cut3.jpg" target="_blank">
+                            <img src="assets/project3/Cut3.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">3rd laser cut design</span>
                         
+                        <p>I also found the parameterization of the design really helpful. It was really nice being able to adjust parameters once in the parameter settings and having this change apply to multiple parts of the design that used that dimension. It also helped avoid mistakes in typing in the wrong dimension for a part. For example, we increased the width of our box by 3mm for our second laser cut iteration, and it made updating the design very quick and easy.</p>
+
+                        <h2>Final Thoughts</h2>
+                        <p>This project gave me good practice with the iterative design process and exposure to lots of new skills for 3D printing, laser cutting, CAD in Fusion, and electronics soldering. I think these skills dealing with the form and fit of a product will be especially helpful in our next couple of projects related to prosthetics.</p>                        
+                        <a href="assets/project3/5-Cars.jpg" target="_blank">
+                            <img src="assets/project3/5-Cars.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">The evolution of our designs</span>
                     </div>
                 </div>
             </div>
