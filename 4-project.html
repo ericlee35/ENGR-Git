@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Project 4: Eric Engineers</title>
+        <link rel="icon" type="image/x-icon" href="assets/lightbulb.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Eric Engineers</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/project4/Stringing.JPG')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>So Handy</h1>
+                            <h2 class="subheading">Project 4: Open-Source Assistive Technology</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Eric Lee</a>
+                                on March 17, 2025
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                       
+                        <p>For this project, we were introduced to open source hardware by 3D printing and assembling a prosthetic hand. I worked with Rebecca on this project and had a good experience learning how to assemble the Phoenix Hand V2, critiquing the instruction materials available in written and video form, and extending our designs by making modifications to the hand to allow for a new functionality. There were some frustrations in the process, but they provided me opportunities to learn and I think they will apply well as we head into our final project that involves inclusive design and prosthetics in the coming weeks.</p>
+
+                        <h2>Part 1+2: Reviewing Documentation, 3D Printing & Assembling</h2>
+                        <p>I first explored the resources on e-NABLE hub, specifically for the <a href="https://hub.e-nable.org/p/devices?p=Phoenix+v2+Hand">Phoenix Hand V2.</a> After downloading the STL files for the parts, I began to lay out the parts on build plates in Prusa Slicer. I didn’t have too much trouble uploading the files, rescaling the parts to 150% size, and reorienting the parts to fit better on the plates. However, I had some confusion about which parts I needed duplicates of, the purpose of the parts, and which parts were left hand vs. right hand specific.</p>
+                        <p>After poking around with some of the instruction resources, I was able to duplicate parts if needed in Prusa and lay them out on build plates. I created a separate plate with right hand vs. left hand specific parts so that I could coordinate Rebecca more easily in terms of printing without having duplicates or parts for the wrong hand. We ultimately decided to build a left hand, so it was easy to ignore the right-hand specific parts since they were isolated onto one build plate. With Ian’s instruction in class, I merged the parts on individual plates and set the raft settings so that there would be good adhesion of the parts onto the plate, especially for small parts like the pins. The raft settings I used are listed in the image below. Overall, I set 3 raft layers to be printed with 8 mm of expansion around the parts. I also turned on snug supports so that sharp overhangs in parts like the fingertips and palm of the hand would be printed successfully.</p>
+                        
+                        <a href="assets/project4/BuildPlates.jpg" target="_blank">
+                            <img src="assets/project4/BuildPlates.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Layout of our buildplates</span>
+
+
+                        <a href="assets/project4/PrintSettings.jpg" target="_blank">
+                            <img src="assets/project4/PrintSettings.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Print settings</span>
+
+                        <a href="assets/project4/Raft.jpg" target="_blank">
+                            <img src="assets/project4/Raft.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Layout of our pieces with raft</span>
+
+
+                        <a href="assets/project4/RaftSettings.jpg" target="_blank">
+                            <img src="assets/project4/RaftSettings.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Raft settings</span>
+                
+                        <p>Initially while printing, I accidentally forgot to merge the parts, so the raft layers were printing unevenly and on top of each other. I think if I continued on with this print, some of my parts would have been uneven in terms of their curved surfaces and at the base. I eventually caught my mistake, stopped the print, and edited my file so that the parts were merged. With this second go-around, my pieces printed successfully!</p>
+
+                        <a href="assets/project4/Print.jpeg" target="_blank">
+                            <img src="assets/project4/Print.jpeg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Printed pieces on our build plate</span>
+
+                        <p>I found coordinating the prints with Rebecca went smoothly. She printed a palm and the gauntlet on the first day while I printed the pins and knuckles. So on our first day of assembly, we were able to assemble part of the hand while printing off the remaining parts: like the left-hand specific pieces and the fingertips.</p>
+                        <p>In terms of documentation, I followed the <a href="https://cdn.thingiverse.com/assets/dd/6b/45/30/fc/Phoenix_v2_assembly_guide.pdf">instruction slides</a> from e-NABLE and two YouTube tutorials on the assembly process: one from <a href="https://www.youtube.com/watch?v=7HxahCR4bNc">The Helping Hand Project: NCSU</a> and one from <a href="https://www.youtube.com/watch?v=Der_DD2_zps&ab_channel=JohnDiamond">John Diamond.</a> I think overall, I used the instruction slides more because they had more close-up views of the different parts used and I think the differing coloration of the fingertips, knuckle pins, and phalanxes was especially helpful. However, one flaw of the instruction slides was that it was more difficult following along with the stringing process since so many steps were combined into a written form with few pictures to follow along with. This is one advantage of using the videos since I could more easily follow along with these multi-step, dynamic processes with visual input instead of purely written instructions. </p>
+                        <a href="assets/project4/Instructions.jpg" target="_blank">
+                            <img src="assets/project4/Instructions.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Some wordy instructions that could use some improvement, I felt especially lost at these steps</span>
+                        <p>One suggestion to improve all three of these instruction formats would be having a clear section at the beginning to describe all the parts needed. It was difficult to figure out how many of each part I needed to print early on in the project, especially since the functions of the parts were foreign to me at the start of this process. It would be helpful to have a table listing what the name of each part is, how many I would need, and a short description of its purpose. It would also be helpful if in each step of the process, there were clear instructions of what parts I would need to gather, making clear descriptions for things like short vs. long fingertips and what type of pin to use when assembling the fingers. It could also be helpful showing a zoomed-out diagram of how the different lengths of string should be strung throughout the palm, fingertips, and whippletree–using different colors to represent the different lengths of string used for the thumb vs. the index and middle finger vs. the ring and pinky finger.</p>
+                        <p>It could also be helpful to have more easy-to-read instructions. For example, the specific parts used in each slide could be highlighted for easier scanning of instructions while you’re looking through the manual for the first time to get a sense of the assembly process.</p>
+                        <p>Overall, I found the assembly process to be smooth, with some difficulties when it came to stringing the fingers. Like mentioned above, it wasn’t the fastest or most straightforward process figuring out which joint went with which fingertip and which pin to use, but the actual experience of putting the pieces together was smooth. We did have to use some files and pliers to get rid of extra support material that was blocking some of the screw holes or pin holes–especially in the palm, but we were able to clear out the extra material eventually.</p>
+                        <p>It was also a fun experience learning how to mold the gauntlet. Gianna helped us heat up our gauntlet and use the mold to help with the curvature of the piece. After this initial molding, we came back to Gianna to further define the shape of the gauntlet when we attached it to the palm–which involved the heat gun, some bending, and some holding the pieces in place as it cooled.</p>
+                        <a href="assets/project4/Heat.JPG" target="_blank">
+                            <img src="assets/project4/Heat.JPG" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Using the heat gun to bend our gauntlet</span>
+
+
+                        <a href="assets/project4/Gauntlet.JPG" target="_blank">
+                            <img src="assets/project4/Gauntlet.JPG" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Gianna helping us shape our gauntlet with the mold</span>
+
+
+                        <a href="assets/project4/Assembly.jpeg" target="_blank">
+                            <img src="assets/project4/Assembly.jpeg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Half way done with assembly</span>
+
+                        <p>Once the parts were attached and the gauntlet was molded, we worked on stringing the fingers. Initially we used an elastic string from the extra-parts drawer since our kit got lost sometime over the weekend. After some confusion on which holes to loop the string through and how they wrapped around from one finger, to the whippletree, to a different finger, we got all the strings attached. However, when we started testing the hand, the string would get more taut around the whippletree, but it wouldn’t get much tighter around the fingers, so none of the fingers were bending. After some consultation with Gianna, we tried tightening the strings before making our final knots to help with the contraction of the fingers, but we still didn’t have any movement. We talked to Ian and he suggested switching to the window-blind string that had much less elasticity. After redoing this string, we got contraction of the fingers! The reduction in elasticity definitely helped a lot since the pulling of the string around the palm region could be translated to the pulling of string around the finger region. Our classmates had similar difficulties using the elastic material but had similar success when they switched to the window blind string.</p>
+                        <a href="assets/project4/Stringing2.JPG" target="_blank">
+                            <img src="assets/project4/Stringing2.JPG" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Unsuccessful attempt when using the elastic string</span>
+
+                        <a href="assets/project4/ElasticString.jpeg" target="_blank">
+                            <img src="assets/project4/ElasticString.jpeg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Maintaining the 30 degree angle for optimal finger contraction</span>
+
+                        <p>One good thing about this process was that since we were learning how to do the stringing for about 1.5 hours the first time around, redoing it the second time with the new string only took about 15 minutes because the process was familiar now.</p>
+                        <p>We finished off the assembly by adding the fingertips, velcro straps, and gripper bar. </p>
+                        <img src="assets/project4/Final.jpeg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Final product with new string</span>
+
+                        <!-- Video -->
+                        <video width="100%" height="400px" controls>
+                            <source src="assets/project4/1.mov" type="video/mp4">
+                        </video>
+                        <span class="caption text-muted">Success!</span>
+
+                        <video width="100%" height="400px" controls>
+                            <source src="assets/project4/2.MOV" type="video/mp4">
+                        </video>
+                        <span class="caption text-muted">So much joy once we switched out the strings</span>
+
+                        <h2>Part 3: Extend, Critique, & Reflect</h2>
+                        <p>In the last part of this project, we worked on modifying the Phoenix V2 to do a particular activity. Rebecca and I decided to make modifications to allow someone with a hand prosthetic to hold a paintbrush and paint. Our initial design focused on a conical shaped holder for the paintbrush to be inserted into and secured around the index finger. After sketching it in Fusion, we found that it wasn’t the best design in terms of being able to secure the paintbrush in place because it would require some kind of additional clamping piece. Additionally, it was pretty long and bulky, meaning it could get in the way of the person’s hand movement.</p>
+                        <a href="assets/project4/Sketch1.jpg" target="_blank">
+                            <img src="assets/project4/Sketch1.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Initial sketches</span>
+
+                        <a href="assets/project4/Sketch2.jpg" target="_blank">
+                            <img src="assets/project4/Sketch2.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Additional sketches</span>
+
+                        <a href="assets/project4/V1.jpg" target="_blank">
+                            <img src="assets/project4/V1.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Iteration 1- cone shaped design</span>
+                        
+                        
+                        <p>From there, we decided to alter our design to be more streamlined. Our second iteration was a ring configuration that could be looped around the index finger and had a small clamp region that could be bent and pulled to fit different sized paintbrushes into. Through this process, I watched some <a href="https://www.youtube.com/watch?v=TOedgF0n4yQ&ab_channel=thehardwareguy">YouTube tutorials</a> on how to draw sketches and extrude on curved surfaces. We also made a modification to this iteration where we could have the paintbrush holder directly imbedded into the phalanx part.</p>
+                        <a href="assets/project4/Curved Surface.jpg" target="_blank">
+                            <img src="assets/project4/Curved Surface.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Learning how to draw sketches on curved surfaces</span>
+
+                        <a href="assets/project4/V2-1.jpg" target="_blank">
+                            <img src="assets/project4/V2-1.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Iteration 2- ring + clip-like design</span>
+
+
+                        <a href="assets/project4/V2-2.jpg" target="_blank">
+                            <img src="assets/project4/V2-2.jpg" alt="..."
+                                style="width:100%; height: auto;vertical-align: 
+                                middle;border-style: none;">
+                        </a>
+                        <span class="caption text-muted">Iteration 2- embedded into the index phalanx</span>
+
+                        <p>If we continued iterating on this process, it would be interesting to talk to painters with hand prosthetics to see what features or designs would be most helpful for them. It would also be a great experience if we could hear from people who use different types of prosthetics about the products they seek, or modifications to their devices that they would want to help them perform different activities in their lives. But overall, I think this activity was helpful in exploring the adaptability of different designs and having an imaginative client in mind.</p>
+
+
+
+
+                        <h2>Final Thoughts</h2>
+                        <p>In working on this project, I connected aspects of prosthesis development and the ethics of design to previous readings we’ve done for class. In reference to <a href="https://dl.icdst.org/pdfs/files4/4bb8d08a9b309df7d86e62ec4056ceef.pdf">The Design of Everyday Things by Don Norman</a>, I think the e-NABLE community does a great job of incorporating the steps of the Human-Centered Design Process: observation, idea generation, prototyping, and testing. For example, the e-NABLE platform allows users to share personal stories and examples of how they use the Phoenix V2, incorporating the idea of empathy to fuel designs.</p>
+                        <p>An idea from this book that also relates to this project is the mentality of using activity-centered design to motivate products instead of purely user-centered design. By taking this more broad perspective in building prosthetic hands that allow users to complete activities in their daily lives more easily–like in the example of our paintbrush holder modifications–it makes our designs more inclusive to a wider audience instead of focusing on a particular type of person with particular needs. </p>
+                        <p>Adding onto this idea of inclusivity, I think one pitfall of the Phoenix V2 is that it is not the most accessible in terms of assembly and fit. There are barriers to understanding the instruction manual, resource barriers in being able to print the parts, physical requirements to assemble the hand, and economic barriers that could prevent people who need this device from being able to get one. Moreover, the adaptability of the hand to a wide audience has its limitations. In Norman’s book, he states that “any system that does not allow for special cases will fail” and I think this applies to the design of the hand. Besides being able to scale the size of all parts to be smaller or larger, there aren’t many modifications in the original design that can be made for people of different needs. It would be nice to see variations in for example the palm shape and gauntlet design so the hand could be more accessible and useful for people with different amputations, malformations, and needs.</p>
+                        <p>This relates to the ideas in <a href="https://www.penguinrandomhouse.com/books/561049/what-can-a-body-do-by-sara-hendren/">What Can a Body Do? by Sarah Hendren</a> which defines disability as a conflict between user and environment and the resulting “misfit” relationship between the two. I think this mental framework was helpful to keep in mind during this project because it allowed us to utilize the capabilities of our imaginative client’s bodies–for example, being able to move a wrist–and adapting the environment to these abilities. It reframed my perspective on the purpose of a prosthetic. Instead of it being a replacement for a person’s body parts, I learned to appreciate the prosthetic as a tool that enhances a person’s abilities and makes the interactions between body and environment more harmonious. </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+                <!-- Footer-->
+                <footer class="border-top">
+                    <div class="container px-4 px-lg-5">
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-md-10 col-lg-8 col-xl-7">
+                                <ul class="list-inline text-center">
+                                </ul>
+                                <div class="small text-center text-muted fst-italic">ENGR11a, Spring 2025</div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
